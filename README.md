@@ -17,7 +17,7 @@ A tool for processing chat files in various formats, extracting topics and summa
 1. Clone the repository:
 
    ```
-   git clone https://github.com/yourusername/llm-chat-indexer.git
+   git clone https://github.com/therealfredp3d/llm-chat-indexer.git
    cd llm-chat-indexer
    ```
 
@@ -45,7 +45,7 @@ A tool for processing chat files in various formats, extracting topics and summa
    cp .env.template .env
    ```
 
-   Edit `.env` to add your API key for the chosen LLM provider and adjust other settings as needed.
+   Edit `.env` to add your API key for the chosen LLM provider and adjust other settings.
 
 ## Usage
 
@@ -67,6 +67,11 @@ By default, it will:
 - **JSON Index**: `output/chat_index.json`
 - **Markdown Summary**: `output/chat_summaries.md`
 
+## Supported LLM Providers
+
+Visit **[List of supported providers](https://docs.litellm.ai/docs/providers)** to choose a LLM or use
+`gemini/gemini-2.0-flash` by default.
+
 ## Configuration
 
 You can configure the tool by editing the `.env` file or setting environment variables:
@@ -85,7 +90,7 @@ You can configure the tool by editing the `.env` file or setting environment var
 
 MIT
 
-## Roadmap
+## Coming Next
 
 - **Enhanced File Format Support**: Add support for additional file formats such as `.docx` and `.pdf` to broaden the tool's applicability.
 - **Interactive Web Interface**: Develop a web-based interface for uploading chat files, configuring settings, and viewing results in real-time.
