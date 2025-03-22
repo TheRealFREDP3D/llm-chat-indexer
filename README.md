@@ -104,3 +104,22 @@ MIT
 | Name    | Frederick Pellerin <fredp3d@proton.me> |  
 | X | [https://x.com/therealfredp3d](@TheRealFREDP3D) |  
 | GitHub | [TheRealFredP3D](https:/github.com/TherealFredP3D) |
+
+---
+
+## Output
+
+### Terminal
+
+```sh
+[...]
+2025-03-22 13:37:12,482 INFO Starting LLM Chat Indexer
+2025-03-22 13:37:12,482 INFO Input directory: \
+2025-03-22 13:37:12,482 INFO Output directory: \output
+2025-03-22 13:37:12,482 INFO Supported extensions: ['.txt', '.md', '.json', '.html', '.csv']
+2025-03-22 13:37:12,482 INFO LLM provider: gemini/gemini-2.0-flash
+2025-03-22 13:37:12,490 INFO Found 2 chat files to process
+2025-03-22 13:37:12,490 INFO Processing file: \requirements.txt
+[...]
+```
+
