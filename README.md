@@ -96,3 +96,12 @@ MIT
 - **Interactive Web Interface**: Develop a web-based interface for uploading chat files, configuring settings, and viewing results in real-time.
 - **Advanced Summarization**: Integrate more advanced AI models for better topic extraction and summary generation.
 - **Multi-Language Support**: Extend the tool's capabilities to process and summarize chats in multiple languages.
+  
+## About the Author
+
+
+|  | |  
+|  -------------  |    ------------   |
+| Name    | Frederick Pellerin <fredp3d@proton.me> |  
+| X | [https://x.com/therealfredp3d](@TheRealFREDP3D) |  
+| GitHub | [TheRealFredP3D](https:/github.com/TherealFredP3D) |
