@@ -16,14 +16,14 @@ A tool for processing chat files in various formats, extracting topics and summa
 
 1. Clone the repository:
 
-   ```
+   ```sh
    git clone https://github.com/therealfredp3d/llm-chat-indexer.git
    cd llm-chat-indexer
    ```
 
 2. Create a virtual environment:
 
-   ```
+   ```sh
    python -m venv venv
    
    # On Windows
@@ -35,13 +35,13 @@ A tool for processing chat files in various formats, extracting topics and summa
 
 3. Install dependencies:
 
-   ```
+   ```sh
    pip install -r requirements.txt
    ```
 
 4. Configure your environment:
 
-   ```
+   ```sh
    cp .env.template .env
    ```
 
@@ -51,7 +51,7 @@ A tool for processing chat files in various formats, extracting topics and summa
 
 Run the tool with:
 
-```
+```sh
 python chat-indexer.py
 ```
 
@@ -98,7 +98,6 @@ MIT
 - **Multi-Language Support**: Extend the tool's capabilities to process and summarize chats in multiple languages.
   
 ## About the Author
-
 
 |  | |  
 |  -------------  |    ------------   |
