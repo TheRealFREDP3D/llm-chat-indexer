@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "05fc871778cf83b463889680a92ace27462e3f30b6468f319febcb98baef2d99"
+            "sha256": "7098f7c3942f2930dc5e1d0c8d6ee6114f23f5d5e192e80f7468ca98025abd3a"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -135,6 +135,15 @@
             ],
             "markers": "python_version >= '3.9'",
             "version": "==4.9.0"
+        },
+        "appmap": {
+            "hashes": [
+                "sha256:5d8263c6fb2da98034015c5a063d834c46ee185c55bbf8bc3b9fe87941ac1b03",
+                "sha256:b7452bc135fa9c1bb0ac5b7a6d71cc720e74be236deb8b6cfcccb0a895aafc5f"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.8' and python_version < '4.0'",
+            "version": "==2.1.8"
         },
         "attrs": {
             "hashes": [
@@ -516,6 +525,22 @@
             ],
             "markers": "python_version >= '3.9'",
             "version": "==8.6.1"
+        },
+        "importlib-resources": {
+            "hashes": [
+                "sha256:82d5c6cca930697dbbd86c93333bb2c2e72861d4789a11c2662b933e5ad2b528",
+                "sha256:9f7bd0c97b79972a6cce36a366356d16d5e13b09679c11a58f1014bfdf8e64b2"
+            ],
+            "markers": "python_version >= '3.8'",
+            "version": "==5.13.0"
+        },
+        "inflection": {
+            "hashes": [
+                "sha256:1a29730d366e996aaacffb2f1f1cb9593dc38e2ddd30c91250c6dde09ea9b417",
+                "sha256:f38b2b640938a4f35ade69ac3d053042959b62a0f1076a5bbaa1b9526605a8a2"
+            ],
+            "markers": "python_version >= '3.5'",
+            "version": "==0.5.1"
         },
         "iniconfig": {
             "hashes": [
