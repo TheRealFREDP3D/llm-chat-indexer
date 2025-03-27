@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+      <mxfile host="codeviz.app" modified="2025-03-23T11:42:51.429Z" agent="CodeViz Exporter" version="14.6.5" type="device">
+        <diagram id="codeviz-diagram" name="System Diagram">
+          <mxGraphModel dx="1000" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+            <root>
+              <mxCell id="0"/>
+              <mxCell id="1" parent="0"/>
+              <mxCell id="subGraph4" value="" style="html=1;whiteSpace=wrap;container=1;fillColor=#dae8fc;strokeColor=#6c8ebf;dashed=1;fillOpacity=20;strokeWidth=2;containerType=none;recursiveResize=0;movable=1;resizable=1;autosize=0;dropTarget=0" vertex="1" parent="1">
+                <mxGeometry x="197" y="982" width="380" height="380" as="geometry"/>
+              </mxCell>
+              <mxCell id="subGraph4_label" value="Monitoring &amp; Logging" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;labelBackgroundColor=white;spacing=5" vertex="1" parent="1">
+                <mxGeometry x="205" y="990" width="304" height="24" as="geometry"/>
+              </mxCell>
+<mxCell id="subGraph3" value="" style="html=1;whiteSpace=wrap;container=1;fillColor=#dae8fc;strokeColor=#6c8ebf;dashed=1;fillOpacity=20;strokeWidth=2;containerType=none;recursiveResize=0;movable=1;resizable=1;autosize=0;dropTarget=0" vertex="1" parent="1">
+                <mxGeometry x="22" y="502" width="240" height="460" as="geometry"/>
+              </mxCell>
+              <mxCell id="subGraph3_label" value="Indexing Pipeline" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;labelBackgroundColor=white;spacing=5" vertex="1" parent="1">
+                <mxGeometry x="30" y="510" width="164" height="24" as="geometry"/>
+              </mxCell>
+<mxCell id="subGraph2" value="" style="html=1;whiteSpace=wrap;container=1;fillColor=#dae8fc;strokeColor=#6c8ebf;dashed=1;fillOpacity=20;strokeWidth=2;containerType=none;recursiveResize=0;movable=1;resizable=1;autosize=0;dropTarget=0" vertex="1" parent="1">
+                <mxGeometry x="392" y="22" width="240" height="460" as="geometry"/>
+              </mxCell>
+              <mxCell id="subGraph2_label" value="Authentication &amp; Authorization" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;labelBackgroundColor=white;spacing=5" vertex="1" parent="1">
+                <mxGeometry x="400" y="30" width="164" height="24" as="geometry"/>
+              </mxCell>
+<mxCell id="subGraph1" value="" style="html=1;whiteSpace=wrap;container=1;fillColor=#dae8fc;strokeColor=#6c8ebf;dashed=1;fillOpacity=20;strokeWidth=2;containerType=none;recursiveResize=0;movable=1;resizable=1;autosize=0;dropTarget=0" vertex="1" parent="1">
+                <mxGeometry x="252" y="528.6666666666667" width="400" height="380" as="geometry"/>
+              </mxCell>
+              <mxCell id="subGraph1_label" value="LLM Processing" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;labelBackgroundColor=white;spacing=5" vertex="1" parent="1">
+                <mxGeometry x="260" y="536.6666666666667" width="324" height="24" as="geometry"/>
+              </mxCell>
+<mxCell id="subGraph0" value="" style="html=1;whiteSpace=wrap;container=1;fillColor=#dae8fc;strokeColor=#6c8ebf;dashed=1;fillOpacity=20;strokeWidth=2;containerType=none;recursiveResize=0;movable=1;resizable=1;autosize=0;dropTarget=0" vertex="1" parent="1">
+                <mxGeometry x="42" y="22" width="240" height="460" as="geometry"/>
+              </mxCell>
+              <mxCell id="subGraph0_label" value="Data Ingestion" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;labelBackgroundColor=white;spacing=5" vertex="1" parent="1">
+                <mxGeometry x="50" y="30" width="164" height="24" as="geometry"/>
+              </mxCell>
+              <mxCell id="input" value="Chat Data Input" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5" vertex="1" parent="subGraph0">
+                    <mxGeometry x="40" y="120" width="120" height="60" as="geometry"/>
+                  </mxCell>
+<mxCell id="fileParser" value="File Parser" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5" vertex="1" parent="subGraph0">
+                    <mxGeometry x="40" y="280" width="120" height="60" as="geometry"/>
+                  </mxCell>
+<mxCell id="preprocessor" value="Data Preprocessor" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5" vertex="1" parent="subGraph0">
+                    <mxGeometry x="40" y="360" width="120" height="60" as="geometry"/>
+                  </mxCell>
+<mxCell id="validator" value="Input Validator" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5" vertex="1" parent="subGraph0">
+                    <mxGeometry x="40" y="200" width="120" height="60" as="geometry"/>
+                  </mxCell>
+<mxCell id="router" value="LLM Router" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5" vertex="1" parent="subGraph1">
+                    <mxGeometry x="160" y="120" width="120" height="60" as="geometry"/>
+                  </mxCell>
+<mxCell id="modelList" value="Model List" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5" vertex="1" parent="subGraph1">
+                    <mxGeometry x="40" y="200" width="120" height="60" as="geometry"/>
+                  </mxCell>
+<mxCell id="llmClient" value="LLM Client" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5" vertex="1" parent="subGraph1">
+                    <mxGeometry x="180" y="200" width="120" height="60" as="geometry"/>
+                  </mxCell>
+<mxCell id="retryHandler" value="Retry Handler" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5" vertex="1" parent="subGraph1">
+                    <mxGeometry x="60" y="280" width="120" height="60" as="geometry"/>
+                  </mxCell>
+<mxCell id="rateLimit" value="Rate Limiter" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5" vertex="1" parent="subGraph1">
+                    <mxGeometry x="200" y="280" width="120" height="60" as="geometry"/>
+                  </mxCell>
+<mxCell id="auth" value="Auth Handler" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5" vertex="1" parent="subGraph2">
+                    <mxGeometry x="40" y="120" width="120" height="60" as="geometry"/>
+                  </mxCell>
+<mxCell id="keyValidator" value="Key Validator" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5" vertex="1" parent="subGraph2">
+                    <mxGeometry x="40" y="200" width="120" height="60" as="geometry"/>
+                  </mxCell>
+<mxCell id="userCheck" value="User Permissions" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5" vertex="1" parent="subGraph2">
+                    <mxGeometry x="40" y="280" width="120" height="60" as="geometry"/>
+                  </mxCell>
+<mxCell id="teamCheck" value="Team Access" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5" vertex="1" parent="subGraph2">
+                    <mxGeometry x="40" y="360" width="120" height="60" as="geometry"/>
+                  </mxCell>
+<mxCell id="indexBuilder" value="Index Builder" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5" vertex="1" parent="subGraph3">
+                    <mxGeometry x="40" y="120" width="120" height="60" as="geometry"/>
+                  </mxCell>
+<mxCell id="embedGen" value="Embedding Generator" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5" vertex="1" parent="subGraph3">
+                    <mxGeometry x="40" y="200" width="120" height="60" as="geometry"/>
+                  </mxCell>
+<mxCell id="semanticIndex" value="Semantic Indexer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5" vertex="1" parent="subGraph3">
+                    <mxGeometry x="40" y="280" width="120" height="60" as="geometry"/>
+                  </mxCell>
+<mxCell id="cacheLayer" value="Cache Manager" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5" vertex="1" parent="subGraph3">
+                    <mxGeometry x="40" y="360" width="120" height="60" as="geometry"/>
+                  </mxCell>
+<mxCell id="logger" value="Proxy Logger" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5" vertex="1" parent="subGraph4">
+                    <mxGeometry x="60" y="120" width="120" height="60" as="geometry"/>
+                  </mxCell>
+<mxCell id="metrics" value="Usage Metrics" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5" vertex="1" parent="subGraph4">
+                    <mxGeometry x="60" y="200" width="120" height="60" as="geometry"/>
+                  </mxCell>
+<mxCell id="alerting" value="Alert System" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5" vertex="1" parent="subGraph4">
+                    <mxGeometry x="40" y="280" width="120" height="60" as="geometry"/>
+                  </mxCell>
+<mxCell id="budgetTracker" value="Budget Tracker" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5" vertex="1" parent="subGraph4">
+                    <mxGeometry x="180" y="280" width="120" height="60" as="geometry"/>
+                  </mxCell>
+              <mxCell id="edge-L_input_validator_0" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="input" target="validator">
+                  <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+<mxCell id="edge-L_validator_fileParser_1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="validator" target="fileParser">
+                  <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+<mxCell id="edge-L_fileParser_preprocessor_2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="fileParser" target="preprocessor">
+                  <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+<mxCell id="edge-L_preprocessor_indexBuilder_3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="preprocessor" target="indexBuilder">
+                  <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+<mxCell id="edge-L_indexBuilder_embedGen_4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="indexBuilder" target="embedGen">
+                  <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+<mxCell id="edge-L_embedGen_semanticIndex_5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="embedGen" target="semanticIndex">
+                  <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+<mxCell id="edge-L_semanticIndex_cacheLayer_6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="semanticIndex" target="cacheLayer">
+                  <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+<mxCell id="edge-L_auth_keyValidator_7" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="auth" target="keyValidator">
+                  <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+<mxCell id="edge-L_keyValidator_userCheck_8" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="keyValidator" target="userCheck">
+                  <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+<mxCell id="edge-L_userCheck_teamCheck_9" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="userCheck" target="teamCheck">
+                  <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+<mxCell id="edge-L_router_modelList_10" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="router" target="modelList">
+                  <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+<mxCell id="edge-L_router_llmClient_11" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="router" target="llmClient">
+                  <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+<mxCell id="edge-L_llmClient_retryHandler_12" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="llmClient" target="retryHandler">
+                  <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+<mxCell id="edge-L_llmClient_rateLimit_13" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="llmClient" target="rateLimit">
+                  <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+<mxCell id="edge-L_logger_metrics_14" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="logger" target="metrics">
+                  <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+<mxCell id="edge-L_metrics_alerting_15" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="metrics" target="alerting">
+                  <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+<mxCell id="edge-L_metrics_budgetTracker_16" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="metrics" target="budgetTracker">
+                  <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+<mxCell id="edge-L_preprocessor_router_17" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="preprocessor" target="router">
+                  <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+<mxCell id="edge-L_teamCheck_router_18" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="teamCheck" target="router">
+                  <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+<mxCell id="edge-L_rateLimit_logger_19" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="rateLimit" target="logger">
+                  <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+<mxCell id="edge-L_cacheLayer_logger_20" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="cacheLayer" target="logger">
+                  <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+          </mxGraphModel>
+        </diagram>
+      </mxfile>
