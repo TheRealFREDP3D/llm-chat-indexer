@@ -88,6 +88,9 @@ def process_file(file_path: str, llm_client: LLMClient, max_topic_keywords: int)
     logger = logging.getLogger("LLMChatIndexer")
     logger.info(f"Processing file: {file_path}")
 
+    # Initialize timestamp before try block to avoid UnboundLocalError in exception handler
+    timestamp = get_timestamp(file_path)
+
     try:
         with open(file_path, "r", encoding="utf-8") as f:
             content = f.read()
@@ -170,35 +173,35 @@ def main():
     if not processed_files:
         logger.error("No files were processed successfully. Exiting.")
         sys.exit(1)
-    
+
     logger.info("Chat indexing completed successfully")
 
 
 def discover_and_process_files(input_dir, supported_extensions, llm_client, logger):
     """
     Discover and process all chat files in the input directory.
-    
+
     Args:
         input_dir (str): Directory containing chat files
         supported_extensions (List[str]): List of supported file extensions
         llm_client (LLMClient): LLM client instance
         logger (logging.Logger): Logger instance
-        
+
     Returns:
         List[dict]: List of processed file data
     """
     # Create output directory if it doesn't exist
     os.makedirs(Config.OUTPUT_DIR, exist_ok=True)
-    
+
     # Get all chat files
     chat_files = get_chat_files(input_dir, supported_extensions)
-    
+
     if not chat_files:
         logger.error(f"No chat files found in {input_dir} with extensions: {supported_extensions}")
         return []
-    
+
     logger.info(f"Found {len(chat_files)} chat files to process")
-    
+
     # Process each file
     processed_files = []
     for file_path in chat_files:
@@ -207,22 +210,22 @@ def discover_and_process_files(input_dir, supported_extensions, llm_client, logg
             processed_files.append(file_data)
         except Exception as e:
             logger.exception(f"Error processing file {file_path}: {str(e)}")
-    
+
     if not processed_files:
         logger.error("No files were successfully processed")
         return []
-    
+
     # Build index and save results
     logger.info("Building index and generating summaries")
     index_path = os.path.join(Config.OUTPUT_DIR, Config.INDEX_FILENAME)
     summary_path = os.path.join(Config.OUTPUT_DIR, Config.SUMMARY_FILENAME)
-    
-    build_index(processed_files, index_path, summary_path)
-    
+
+    build_index({"files": processed_files}, Config.OUTPUT_DIR, Config.INDEX_FILENAME, Config.SUMMARY_FILENAME)
+
     logger.info(f"Successfully processed {len(processed_files)} files")
     logger.info(f"Index saved to {index_path}")
     logger.info(f"Summaries saved to {summary_path}")
-    
+
     return processed_files
 
 
