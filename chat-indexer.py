@@ -229,10 +229,56 @@ def discover_and_process_files(input_dir, supported_extensions, llm_client, logg
     return processed_files
 
 
+def ensure_directories():
+    """Ensure required directories exist."""
+    directories = [
+        Config.OUTPUT_DIR,
+        os.path.dirname(Config.LOG_FILE),
+        'logs',
+        'output',
+        'input'
+    ]
+    
+    for directory in directories:
+        if not os.path.exists(directory):
+            os.makedirs(directory)
+            logger.info(f"Created directory: {directory}")
+
+
+def check_environment():
+    """Verify environment setup before running"""
+    required_dirs = ['input', 'output', 'logs', 'assets']
+    for dir_name in required_dirs:
+        if not os.path.exists(dir_name):
+            os.makedirs(dir_name)
+            logger.info(f"Created missing directory: {dir_name}")
+    
+    # Check for .env file
+    if not os.path.exists('.env'):
+        logger.warning("No .env file found. Copying from template...")
+        shutil.copy('.env.template', '.env')
+        logger.warning("Please edit .env file with your API key and settings")
+        sys.exit(1)
+
+    # Verify API key is set
+    if os.getenv('LLM_API_KEY') == 'your_api_key_here':
+        logger.error("Please set your LLM API key in .env file")
+        sys.exit(1)
+
+
 if __name__ == "__main__":
     # Import here to avoid circular import issues
     # This is necessary because datetime is used in main() which imports
     # other modules that might also import datetime, causing circular dependencies
     from datetime import datetime
+
+    # Set up logger
+    logger = setup_logger(Config.LOG_LEVEL, Config.LOG_FILE)
+    logger.info("Starting LLM Chat Indexer")
+
+    # Ensure required directories exist
+    ensure_directories()
+
+    check_environment()
 
     main()

@@ -1,94 +1,60 @@
 # Chat Summaries
 
-*Generated on: 2025-03-28 01:30:36*
+*Generated on: 2025-03-28 03:32:09*
 
-This document contains summaries of 5 chat files.
+This document contains summaries of 3 chat files.
 
 ## Table of Contents
 
-- [outline-gemma3.md](#outline-gemma3-md)
-- [outline-gemmini-2.0-flash-clean.md](#outline-gemmini-2-0-flash-clean-md)
-- [outline-gemmini-2.0-flash.md](#outline-gemmini-2-0-flash-md)
-- [outline-grok.md](#outline-grok-md)
-- [outline-grok.txt](#outline-grok-txt)
+- [ai-snake-game-treejs-gemini-2.5-pro.md](#ai-snake-game-treejs-gemini-2-5-pro-md)
+- [pwntools-sheetcheat-qwen-2.5-max.md](#pwntools-sheetcheat-qwen-2-5-max-md)
+- [what-is-context-chatgpt.md](#what-is-context-chatgpt-md)
 
-## outline-gemma3.md
+## ai-snake-game-treejs-gemini-2.5-pro.md
 
 ### Metadata
 
-**Date:** 2025-03-21 04:58:46
+**Date:** 2025-03-28 03:15:05
 
-**Messages:** 69
+**Messages:** 55
 
-**Topics:** Project Overview, Core Functionality, Security & Persistence, Technology Stack, Enhancements
+**Topics:** Clear Separation of Concerns, A* Pathfinding, Three.js Best Practices, Collision Detection, Food Placement
 
 ### Summary
 
-The conversation revolves around refining a detailed project outline for "BanditGUI," an integrated learning environment and terminal simulator. The revised outline covers core setup, functionality, security, and enhancements. Key suggestions include using React for the front-end, implementing WebSockets for real-time updates, utilizing Git for version control, and expanding the terminal emulator and AI assistant capabilities. The discussion highlights the importance of user authentication/security, password management, and persistent data storage. Concrete technologies, such as Flask, Flask-SocketIO, paramiko, cryptography, and requests, are recommended for various functionalities. Further clarification is offered on code structure examples, backend responses, and AI assistant implementation.
+The improved Three.js snake game features a clear code structure with separate functions for various tasks, including scene setup, snake and food creation, collision detection, and a game loop. The AI is driven by a simplified A* pathfinding algorithm that guides the snake towards food while avoiding collisions, with basic stuck handling. The game uses Three.js best practices such as THREE.Group for snake segments and efficient mesh updates. Key features include robust collision detection, proper food placement, game over functionality, score tracking, window resizing, and smooth snake movement. The AI implementation is basic and can be improved further using complete A* Algorithm, wall following algorithm, Genetic Algorithm/Reinforcement Learning and Lookahead. Further improvements can be made such as Optimize Collision Detection, GUI, Obstacles, Multiple Food Items, Different Snake Colors, Level Design and Power-Ups.
 
 ---
 
-## outline-gemmini-2.0-flash-clean.md
+## pwntools-sheetcheat-qwen-2.5-max.md
 
 ### Metadata
 
-**Date:** 2025-03-21 05:03:52
+**Date:** 2025-03-28 03:12:40
 
-**Messages:** 123
+**Messages:** 35
 
-**Topics:** Flask web app, SSH connection, Terminal interaction, AI chat assistant, Password encryption
+**Topics:** Pwntools installation, Connecting to targets, Packing and unpacking, Debugging, Exploitation helpers
 
 ### Summary
 
-This conversation outlines the steps to build a "BanditGUI" web application using Flask. The application features a home page with a two-panel layout consisting of a chat/instruction panel and a simulated terminal. Functionality includes simulating terminal commands, basic SSH connection via Paramiko, an AI chat assistant providing hints from a JSON database, secure password storage using Fernet encryption, progress tracking, and a badge system for gamification. The guide also suggests next steps such as enhancing the terminal with WebSockets, improving the AI with machine learning, strengthening security with HTTPS and user authentication, and polishing the UI with CSS frameworks.
+This conversation provides a cheat sheet for pwntools, a Python library for exploit development and CTF challenges. The cheat sheet covers installation, basic setup, connecting to remote targets, sending and receiving data, packing and unpacking, shellcode generation, debugging, exploitation helpers like ROP chains and ELF parsing, format string exploits, and utility functions. It's intended as a quick reference, with a recommendation to consult the official documentation for advanced usage.
 
 ---
 
-## outline-gemmini-2.0-flash.md
+## what-is-context-chatgpt.md
 
 ### Metadata
 
-**Date:** 2025-03-21 04:51:58
+**Date:** 2025-03-28 03:10:44
 
-**Messages:** 153
+**Messages:** 27
 
-**Topics:** Flask app setup, Two-panel layout, Simulated terminal, SSH connection, AI chat assistant
-
-### Summary
-
-The user is requesting a document to be split into smaller chapters, outlining the steps to build a Flask application with features such as a two-panel layout (chat/instructions and terminal), a simulated terminal, basic SSH connection via Paramiko, a simple AI chat assistant, password management with encryption, progress tracking, and gamification using badges and streaks. The document provides detailed instructions, code snippets, and explanations for each step, including setting up the Flask app, designing the layout, implementing terminal commands, establishing SSH connections, handling chat queries, securing passwords, tracking user progress, and awarding badges.
-
----
-
-## outline-grok.md
-
-### Metadata
-
-**Date:** 2025-03-21 04:54:49
-
-**Messages:** 1
-
-**Topics:** Flask App, Two-Panel Layout, SSH Connection, AI Chat Assistant, Gamification
+**Topics:** LLM context, Session Context, Persistent Context, External Context, Prompt Engineering Context
 
 ### Summary
 
-The conversation outlines an 8-step guide for building BanditGUI, a Flask-based web application featuring a two-panel interface for chat and terminal interaction, SSH connectivity, an AI chat assistant, password encryption, and gamification elements. The guide details setting up the Flask app, designing the two-panel layout, simulating a terminal, implementing SSH connections using Paramiko, adding a simple AI chat assistant with predefined hints, securing passwords with encryption, tracking user progress through levels, and incorporating gamification with badges and streaks to enhance user engagement. Each step progressively builds the application into a fully functional and engaging tool.
-
----
-
-## outline-grok.txt
-
-### Metadata
-
-**Date:** 2025-03-21 04:55:26
-
-**Messages:** 36
-
-**Topics:** Flask, Two-Panel Layout, SSH Connection, AI Chat Assistant, Gamification
-
-### Summary
-
-This conversation contains 36 messages with approximately 524 words discussing various topics.
+The conversation outlines different types of context used by Large Language Models (LLMs) to generate responses. These include immediate context (token window), session context (conversation history within a single session), persistent context (long-term memory across conversations), external context (user-provided data like documents or databases), and prompt engineering context (structure and instructions within the prompt itself). Newer models handle longer contexts more effectively, and while session context is lost after a reset, persistent context and external context enable more personalized and factually accurate responses.
 
 ---
 

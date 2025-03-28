@@ -38,7 +38,8 @@ class Config:
 
     # LLM service configuration
     LLM_PROVIDER = os.getenv("LLM_PROVIDER", "gemini/gemini-2.0-flash")
-    LLM_API_KEY = os.getenv("LLM_API_KEY")  # No default for security reasons
+    # API key can be from any supported provider (see .env.template examples)
+    LLM_API_KEY = os.getenv("LLM_API_KEY")  # Supports GOOGLE_API_KEY/OPENAI_API_KEY etc via LiteLLM
 
     # File types that can be processed
     SUPPORTED_FILE_EXTENSIONS = os.getenv("SUPPORTED_FILE_EXTENSIONS", ".txt,.md,.json,.html,.csv").split(",")
