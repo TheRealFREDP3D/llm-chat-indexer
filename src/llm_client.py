@@ -248,7 +248,7 @@ class LLMClient:
 
         # Truncate if too long (provider-dependent)
         if len(message_text) > 15000:
-            message_text = message_text[:15000] + "..."
+            message_text = f"{message_text[:15000]}..."
             logger.info("Message text truncated to 15,000 characters for topic extraction")
 
         prompt = f"Extract exactly {max_keywords} key topics from this chat conversation. Return them as a comma-separated list with no additional text:\n\n{message_text}"
