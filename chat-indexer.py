@@ -255,10 +255,14 @@ def check_environment():
     
     # Check for .env file
     if not os.path.exists('.env'):
-        logger.warning("No .env file found. Copying from template...")
-        shutil.copy('.env.template', '.env')
-        logger.warning("Please edit .env file with your API key and settings")
-        sys.exit(1)
+        if os.path.exists('.env.template'):
+            logger.warning("No .env file found. Copying from template...")
+            shutil.copy('.env.template', '.env')
+            logger.warning("Please edit .env file with your API key and settings")
+            sys.exit(1)
+        else:
+            logger.error("No .env file found and .env.template does not exist. Cannot proceed.")
+            sys.exit(1)
 
     # Verify API key is set
     if os.getenv('LLM_API_KEY') == 'your_api_key_here':
