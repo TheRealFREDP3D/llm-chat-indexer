@@ -178,3 +178,12 @@ cython_debug/
 .vscode/PythonImportHelper-v2-Completion.json
 .vscode/v0.1-test.code-workspace
 .vscode/settings.json
+/.venv
+chats/outline-gemma3.md
+chats/outline-gemmini-2.0-flash-clean.md
+chats/outline-gemmini-2.0-flash.md
+chats/outline-grok.md
+chats/outline-grok.txt
+chats/outline-summary-toc-gemmini-thinkx-exp.md
+chats/outline-summary.toc.md
+chats/TODO.md
