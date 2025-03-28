@@ -19,6 +19,8 @@ def setup_logger(log_level, log_file, log_format=None):
     Returns:
         logging.Logger: Configured logger instance
 
+    Creates log directory if it doesn't exist
+
     Examples:
         Custom format for production debugging:
         >>> logger = setup_logger(

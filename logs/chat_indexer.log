@@ -1,0 +1,19 @@
+2025-03-28 03:23:32,914 INFO Starting LLM Chat Indexer
+2025-03-28 03:23:32,914 INFO Input directory: F:\BACKUP\FRED\PROJECTS\__GITHUB-TheRealFredP3D\llm-chat-indexer\REPO\chats
+2025-03-28 03:23:32,914 INFO Output directory: F:\BACKUP\FRED\PROJECTS\__GITHUB-TheRealFredP3D\llm-chat-indexer\REPO\output
+2025-03-28 03:23:32,914 INFO Supported extensions: ['.txt', '.md']
+2025-03-28 03:23:32,915 INFO LLM provider: gemini/gemini-2.0-flash
+2025-03-28 03:23:32,916 INFO Found 3 chat files to process
+2025-03-28 03:23:32,916 INFO Processing file: F:\BACKUP\FRED\PROJECTS\__GITHUB-TheRealFredP3D\llm-chat-indexer\REPO\chats\ai-snake-game-treejs-gemini-2.5-pro.md
+2025-03-28 03:26:25,438 INFO Processing file: F:\BACKUP\FRED\PROJECTS\__GITHUB-TheRealFredP3D\llm-chat-indexer\REPO\chats\pwntools-sheetcheat-qwen-2.5-max.md
+2025-03-28 03:29:17,338 INFO Processing file: F:\BACKUP\FRED\PROJECTS\__GITHUB-TheRealFredP3D\llm-chat-indexer\REPO\chats\what-is-context-chatgpt.md
+2025-03-28 03:32:09,043 INFO Building index and generating summaries
+2025-03-28 03:32:09,045 INFO Formatting timestamps for index entries
+2025-03-28 03:32:09,045 INFO Writing JSON index to ./output\chat_index.json
+2025-03-28 03:32:09,046 INFO Successfully wrote JSON index with 3 file entries
+2025-03-28 03:32:09,047 INFO Generating markdown summary to ./output\chat_summaries.md
+2025-03-28 03:32:09,047 INFO Successfully wrote markdown summary with 3 file entries
+2025-03-28 03:32:09,048 INFO Successfully processed 3 files
+2025-03-28 03:32:09,048 INFO Index saved to ./output\chat_index.json
+2025-03-28 03:32:09,048 INFO Summaries saved to ./output\chat_summaries.md
+2025-03-28 03:32:09,048 INFO Chat indexing completed successfully
