@@ -41,3 +41,7 @@ Thumbs.db
 .qodo/history.sqlite
 src/appmap.log
 tests/appmap.log
+archive/Project-POC.rar
+archive/v0.1.tar
+archive/v0.2.tar
+archive/WORKING-v0.1-chat-indexer.py
