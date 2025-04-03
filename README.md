@@ -250,4 +250,4 @@ Current Version: 0.2.0
 - GitHub Issues: [Create an issue](https://github.com/therealfredp3d/llm-chat-indexer/issues)
 - Email: <fredp3d@proton.me>
 - X: [@TheRealFREDP3D](https://x.com/TheRealFREDP3D)
-- Website: [www.therealfred.ca>](www.therealfred.ca)
+- Website: [www.therealfred.ca](www.therealfred.ca)
